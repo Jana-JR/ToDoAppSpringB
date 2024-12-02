@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo app</title>
+</head>
+<body>
+<h1>ToDo Application</h1>
+
+<div>
+    <th:block th:each="task : ${tasks}">
+        <div>
+            <span th:text="${task.title}">Task Title</span>
+        </div>
+    </th:block>
+</div>
+<div>
+    <form>
+
+    </form>
+</div>
+<div></div>
+
+
+</body>
+</html>
